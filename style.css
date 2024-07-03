@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+main{
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    background: #023246;
+    color: #D4D4CE;
+}
+
+.day-time{
+    font-family: 'Playfair-Display', sans-serif;
+    padding: 10px 0;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.day-time p{
+    padding: 5px 0;
+    font-size: 14px;
+}
+.hero{
+    padding: 20px 0;
+}
+.profile{
+    margin: 10px 0;
+}
+.profile-container .profile p{
+    font-size: 18px;
+    padding: 5px 0;
+}
+
+.text-container{
+    padding: 20px 0;
+}
+.text-container h1{
+    font-size: 30px;
+    padding: 15px 0;
+}
+
+.text-container li{
+    font-size: 18px;
+    padding: 7px 0;
+    list-style-type: none;
+}
+.link-container{
+    padding-left: 20px;
+}
+.link-container h2{
+    padding: 10px 0;
+}
+.link-container a{
+    text-decoration: none;
+    color: #D4D4CE;
+    font-size: 14px;
+    transition: all 0.5s ease;
+}
+
+.link-container a:hover{
+    text-decoration: underline;
+}
+.link-container li{
+    list-style-type: none;
+    padding: 5px 0;
+}
+.link-container a > span{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+}
+
+@media screen and (max-width:900px) {
+    .profile-container img{
+        display: block;
+        margin: 0 auto;
+    }
+    .profile{
+        text-align: center;
+    }
+   .text-container{
+    padding: 20px;
+   } 
+}
+
+@media screen and (min-width:901px) {
+  .hero{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }  
+
+  .text-container{
+     width: 40%;
+  }
+
+}
